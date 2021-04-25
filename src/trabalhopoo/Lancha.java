@@ -8,7 +8,9 @@ package trabalhopoo;
 public class Lancha extends BarcoPequeno {
 
     private boolean banheiro;
-
+    
+    private String Dono;
+    
     public boolean isBanheiro() {
         return banheiro;
     }

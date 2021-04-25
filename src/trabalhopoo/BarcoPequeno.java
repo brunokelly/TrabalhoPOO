@@ -13,7 +13,6 @@ public abstract class BarcoPequeno extends Barco {
     public String getTipoCasco() {
         return tipoCasco;
     }
-
     public void setTipoCasco(String tipoCasco) {
         this.tipoCasco = tipoCasco;
     }
@@ -21,8 +20,8 @@ public abstract class BarcoPequeno extends Barco {
     public int getPotenciaMotor() {
         return potenciaMotor;
     }
-
     public void setPotenciaMotor(int potenciaMotor) {
         this.potenciaMotor = potenciaMotor;
     }
+    
 }

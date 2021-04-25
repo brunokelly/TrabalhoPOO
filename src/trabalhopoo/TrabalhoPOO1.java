@@ -14,8 +14,7 @@ public class TrabalhoPOO1 {
         numCabine = teste.PessoasPorCabine(); 
         
         System.out.println(numCabine);
-       
-       
+        
     }
     
 }

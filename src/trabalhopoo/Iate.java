@@ -15,15 +15,13 @@ public class Iate extends Barco{
     public int getNumeroTripulantes() {
         return numeroTripulantes;
     }
-
     public void setNumeroTripulantes(int numeroTripulantes) {
         this.numeroTripulantes = numeroTripulantes;
     }
-
+    
     public int getNumeroCabines() {
         return numeroCabines;
     }
-
     public final void setNumeroCabines(int numeroCabines) {
         this.numeroCabines = numeroCabines;
     }
@@ -39,7 +37,6 @@ public class Iate extends Barco{
     public double getPeso() {
         return peso;
     }
-
     public void setPeso(double peso) {
         this.peso = peso;
     }
