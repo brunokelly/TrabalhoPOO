@@ -4,14 +4,18 @@
  * and open the template in the editor.
  */
 package trabalhopoo;
-/**
- *
- * @author bruno
- */
+
 public class TrabalhoPOO1 {
 
     public static void main(String[] args) {
- 
+        Iate teste = new Iate(50,2);
+        
+        int numCabine;
+        numCabine = teste.PessoasPorCabine(); 
+        
+        System.out.println(numCabine);
+       
+       
     }
     
 }

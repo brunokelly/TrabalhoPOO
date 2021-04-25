@@ -5,10 +5,6 @@
  */
 package trabalhopoo;
 
-/**
- *
- * @author bruno
- */
 public abstract class BarcoPequeno extends Barco {
     
     private String tipoCasco;

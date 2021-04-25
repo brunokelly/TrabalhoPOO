@@ -5,14 +5,10 @@
  */
 package trabalhopoo;
 
-/**
- *
- * @author bruno
- */
 public interface ControleBarco {
     
     public void Cadastrar();
-    public void Imprimir();
-    public float ValorDesconto();
+    public String Imprimir();
+    public double ValorDesconto();
     public Barco Entrada();
 }
