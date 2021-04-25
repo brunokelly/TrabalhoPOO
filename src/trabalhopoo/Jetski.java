@@ -7,7 +7,7 @@ package trabalhopoo;
 
 public class Jetski extends BarcoPequeno {
     
-    private boolean reboque;
+    private boolean reboque; 
     
     public boolean isReboque() {
         return reboque;

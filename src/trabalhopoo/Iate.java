@@ -10,7 +10,7 @@ public class Iate extends Barco{
     private int numeroTripulantes;
     private int numeroCabines;
     private boolean piscina;
-    private double peso;  
+    private double peso;   
 
     public int getNumeroTripulantes() {
         return numeroTripulantes;

@@ -46,6 +46,6 @@ public class Lancha extends BarcoPequeno {
 
     @Override
     public void Cadastrar() {
-    }
+    } 
     
 }
