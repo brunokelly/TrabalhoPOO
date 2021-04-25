@@ -8,7 +8,8 @@ package trabalhopoo;
 public class Jetski extends BarcoPequeno {
     
     private boolean reboque; 
-    
+
+
     public boolean isReboque() {
         return reboque;
     }
@@ -35,8 +36,10 @@ public class Jetski extends BarcoPequeno {
 
     @Override
     public String Imprimir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "reboque = " + reboque + "\n" + super.Imprimir();
     }
+
+    
 
     @Override
     public void Cadastrar() {

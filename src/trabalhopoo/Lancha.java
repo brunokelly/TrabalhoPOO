@@ -16,10 +16,10 @@ public class Lancha extends BarcoPequeno {
     public void setBanheiro(boolean banheiro) {
         this.banheiro = banheiro;
     }
-    
-    public Lancha(String marca){
-        this.setMarca(marca);
-   }
+
+    public Lancha(double preco) {
+        super(preco);
+    }
 
     /* MEOTODS */
     @Override
@@ -39,11 +39,11 @@ public class Lancha extends BarcoPequeno {
 
     @Override
     public String Imprimir() {
-        return "Barco{"+ "banheiro=" + isBanheiro() + "marca=" + getMarca() + ", modelo=" + getModelo() + ", cor=" + getCor() + ", identificacao=" + getIdentificacao() + ", numeroPassageiros=" + getNumeroPassageiros() + ", velocidadeMaxima=" + getVelocidadeMaxima() + ", alturaCalado=" + getAlturaCalado() + ", preco=" + getPreco() + '}';
+        return "banheiro = " + banheiro + '\n' + super.Imprimir();
     }
-
+    
     @Override
     public void Cadastrar() {
-    } 
+    }  
     
 }

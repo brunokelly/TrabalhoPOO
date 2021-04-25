@@ -8,13 +8,12 @@ package trabalhopoo;
 public class TrabalhoPOO1 {
 
     public static void main(String[] args) {
-        Iate teste = new Iate(50,2);
+        Iate iateUm = new Iate(1500);
+
         
-        int numCabine;
-        numCabine = teste.PessoasPorCabine(); 
-        teste.toString();
-        teste.Imprimir();
+        iateUm.toString();
+        iateUm.Imprimir();
         
-        System.out.println();
+        System.out.println(iateUm.ValorDesconto());
     }
 }

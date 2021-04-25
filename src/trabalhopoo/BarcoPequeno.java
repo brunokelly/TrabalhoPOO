@@ -98,6 +98,73 @@ public abstract class BarcoPequeno implements ControleBarco {
         this.potenciaMotor = potenciaMotor;
     }
 
+    public BarcoPequeno() {
+    }
+
+    public BarcoPequeno(double preco) {
+        this.preco = preco;
+    }
+
+    public BarcoPequeno(String marca, String modelo, String cor) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.cor = cor;
+    }
+
+    public BarcoPequeno(String modelo, String identificacao, int velocidadeMaxima) {
+        this.modelo = modelo;
+        this.identificacao = identificacao;
+        this.velocidadeMaxima = velocidadeMaxima;
+    }
+
+    public BarcoPequeno(String modelo, String identificacao, int velocidadeMaxima, String tipoCasco) {
+        this.modelo = modelo;
+        this.identificacao = identificacao;
+        this.velocidadeMaxima = velocidadeMaxima;
+        this.tipoCasco = tipoCasco;
+    }
+
+    public BarcoPequeno(String modelo, String identificacao, int velocidadeMaxima, String tipoCasco, int potenciaMotor) {
+        this.modelo = modelo;
+        this.identificacao = identificacao;
+        this.velocidadeMaxima = velocidadeMaxima;
+        this.tipoCasco = tipoCasco;
+        this.potenciaMotor = potenciaMotor;
+    }
+
+    public BarcoPequeno(String marca, String modelo, double preco) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.preco = preco;
+    }
+
+    public BarcoPequeno(double preco, String tipoCasco) {
+        this.preco = preco;
+        this.tipoCasco = tipoCasco;
+    }
+
+    public BarcoPequeno(int velocidadeMaxima, int potenciaMotor) {
+        this.velocidadeMaxima = velocidadeMaxima;
+        this.potenciaMotor = potenciaMotor;
+    }
+
+    public BarcoPequeno(String marca, String modelo, String cor, String identificacao, int numeroPassageiros, int velocidadeMaxima, double alturaCalado, double preco, String tipoCasco, int potenciaMotor) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.identificacao = identificacao;
+        this.numeroPassageiros = numeroPassageiros;
+        this.velocidadeMaxima = velocidadeMaxima;
+        this.alturaCalado = alturaCalado;
+        this.preco = preco;
+        this.tipoCasco = tipoCasco;
+        this.potenciaMotor = potenciaMotor;
+    }
+    
+    
+    
+    
+
     @Override
     public void Cadastrar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -105,19 +172,14 @@ public abstract class BarcoPequeno implements ControleBarco {
 
     @Override
     public String Imprimir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "marca = " + marca + ", modelo = " + modelo + ", cor = " + cor + ", identificacao = " + identificacao + ", numeroPassageiros = " + numeroPassageiros + ", velocidadeMaxima = " + velocidadeMaxima + ", alturaCalado = " + alturaCalado + ", preco = " + preco + ", tipoCasco = " + tipoCasco + ", potenciaMotor = " + potenciaMotor + '\n';
     }
-
+    
     @Override
-    public double ValorDesconto() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public abstract double ValorDesconto();
 
     @Override
     public Barco Entrada() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-  
-    
 }

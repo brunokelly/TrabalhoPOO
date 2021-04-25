@@ -15,12 +15,6 @@ public abstract class Barco implements ControleBarco {
     private int velocidadeMaxima;
     private double alturaCalado;
     private double preco;
-
-    @Override
-    public String Imprimir() {
-        return "Barco{" + "marca=" + marca + ", modelo=" + modelo + ", cor=" + cor + ", identificacao=" + identificacao + ", numeroPassageiros=" + numeroPassageiros + ", velocidadeMaxima=" + velocidadeMaxima + ", alturaCalado=" + alturaCalado + ", preco=" + preco + '}';
-    }
-    
     
     public String getMarca() {
         return marca;
@@ -84,8 +78,10 @@ public abstract class Barco implements ControleBarco {
     @Override
     public abstract double ValorDesconto();
     
-    //@Override
-    //public abstract String Imprimir();
+    @Override
+    public String Imprimir() {
+        return "marca = " + marca + ", modelo = " + modelo + ", cor = " + cor + ", identificacao = " + identificacao + ", numeroPassageiros = " + numeroPassageiros + ", velocidadeMaxima = " + velocidadeMaxima + ", alturaCalado = " + alturaCalado + ", preco = " + preco + '\n';
+    }
 
     @Override
     public abstract void Cadastrar();
@@ -93,6 +89,14 @@ public abstract class Barco implements ControleBarco {
     public Barco() {
     }
 
+    public Barco(double preco) {
+        this.preco = preco;
+    }
+
+    public Barco(int numeroPassageiros) {
+        this.numeroPassageiros = numeroPassageiros;
+    }
+    
     public Barco(String marca) {
         this.marca = marca;
     }
@@ -142,19 +146,6 @@ public abstract class Barco implements ControleBarco {
         this.alturaCalado = alturaCalado;
     }
 
-    public Barco(String marca, String modelo, String cor, String identificacao, int numeroPassageiros, int velocidadeMaxima, double alturaCalado, double preco) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.cor = cor;
-        this.identificacao = identificacao;
-        this.numeroPassageiros = numeroPassageiros;
-        this.velocidadeMaxima = velocidadeMaxima;
-        this.alturaCalado = alturaCalado;
-        this.preco = preco;
-    }
-
-    public Barco(int numeroPassageiros) {
-        this.numeroPassageiros = numeroPassageiros;
-    }
+    
     
 }

@@ -57,9 +57,9 @@ public class Iate extends Barco{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
+   @Override
     public String Imprimir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "numeroTripulantes = " + numeroTripulantes + ", numeroCabines = " + numeroCabines + ", piscina = " + piscina + ", peso = " + peso + "\n" + super.Imprimir();
     }
 
     @Override
@@ -74,10 +74,42 @@ public class Iate extends Barco{
     }
     
     /* CONSTRUTORES */
+
+    public Iate() {
+    }
+
+    public Iate(boolean piscina, String marca, String modelo) {
+        super(marca, modelo);
+        this.piscina = piscina;
+    }
+
+    public Iate(double peso, String marca) {
+        super(marca);
+        this.peso = peso;
+    }
+
+    public Iate(int numeroTripulantes, String marca, String modelo, String cor, String identificacao) {
+        super(marca, modelo, cor, identificacao);
+        this.numeroTripulantes = numeroTripulantes;
+    }
+
+    public Iate(int numeroTripulantes, int numeroCabines, boolean piscina, double peso, String marca, String modelo, String cor, String identificacao, int numeroPassageiros, int velocidadeMaxima) {
+        super(marca, modelo, cor, identificacao, numeroPassageiros, velocidadeMaxima);
+        this.numeroTripulantes = numeroTripulantes;
+        this.numeroCabines = numeroCabines;
+        this.piscina = piscina;
+        this.peso = peso;
+    }    
+    
     public Iate(int NumeroPassageiros, int NumeroCabines)
     {
         super(NumeroPassageiros);
         setNumeroCabines(NumeroCabines);
     }
+
+    public Iate(double preco) {
+        super(preco);
+    }
+    
     
 }
