@@ -48,8 +48,4 @@ public class Lancha extends BarcoPequeno {
     public void Cadastrar() {
     }
     
-        
-    
-    
-    
 }
