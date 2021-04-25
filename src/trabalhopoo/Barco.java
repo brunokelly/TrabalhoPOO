@@ -5,7 +5,7 @@
  */
 package trabalhopoo;
 
-public abstract class Barco implements ControleBarco {
+public abstract class Barco {
     
     private String marca;
     private String modelo;
@@ -15,10 +15,16 @@ public abstract class Barco implements ControleBarco {
     private int velocidadeMaxima;
     private double alturaCalado;
     private double preco;
+    private String tipoCasco;
+    private int potenciaMotor; 
     
+    
+    /* GETTERS AND SETTERS */
+
     public String getMarca() {
         return marca;
     }
+
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -26,6 +32,7 @@ public abstract class Barco implements ControleBarco {
     public String getModelo() {
         return modelo;
     }
+
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
@@ -33,6 +40,7 @@ public abstract class Barco implements ControleBarco {
     public String getCor() {
         return cor;
     }
+
     public void setCor(String cor) {
         this.cor = cor;
     }
@@ -40,6 +48,7 @@ public abstract class Barco implements ControleBarco {
     public String getIdentificacao() {
         return identificacao;
     }
+
     public void setIdentificacao(String identificacao) {
         this.identificacao = identificacao;
     }
@@ -47,6 +56,7 @@ public abstract class Barco implements ControleBarco {
     public int getNumeroPassageiros() {
         return numeroPassageiros;
     }
+
     public void setNumeroPassageiros(int numeroPassageiros) {
         this.numeroPassageiros = numeroPassageiros;
     }
@@ -54,6 +64,7 @@ public abstract class Barco implements ControleBarco {
     public int getVelocidadeMaxima() {
         return velocidadeMaxima;
     }
+
     public void setVelocidadeMaxima(int velocidadeMaxima) {
         this.velocidadeMaxima = velocidadeMaxima;
     }
@@ -61,6 +72,7 @@ public abstract class Barco implements ControleBarco {
     public double getAlturaCalado() {
         return alturaCalado;
     }
+
     public void setAlturaCalado(double alturaCalado) {
         this.alturaCalado = alturaCalado;
     }
@@ -68,23 +80,28 @@ public abstract class Barco implements ControleBarco {
     public double getPreco() {
         return preco;
     }
+
     public void setPreco(double preco) {
         this.preco = preco;
     }
 
-    @Override
-    public abstract Barco Entrada();
-
-    @Override
-    public abstract double ValorDesconto();
-    
-    @Override
-    public String Imprimir() {
-        return "marca = " + marca + ", modelo = " + modelo + ", cor = " + cor + ", identificacao = " + identificacao + ", numeroPassageiros = " + numeroPassageiros + ", velocidadeMaxima = " + velocidadeMaxima + ", alturaCalado = " + alturaCalado + ", preco = " + preco + '\n';
+    public String getTipoCasco() {
+        return tipoCasco;
     }
 
-    @Override
-    public abstract void Cadastrar();
+    public void setTipoCasco(String tipoCasco) {
+        this.tipoCasco = tipoCasco;
+    }
+
+    public int getPotenciaMotor() {
+        return potenciaMotor;
+    }
+
+    public void setPotenciaMotor(int potenciaMotor) {
+        this.potenciaMotor = potenciaMotor;
+    }
+    
+      /* CONSTRUTORES */
 
     public Barco() {
     }
@@ -96,7 +113,7 @@ public abstract class Barco implements ControleBarco {
     public Barco(int numeroPassageiros) {
         this.numeroPassageiros = numeroPassageiros;
     }
-    
+  
     public Barco(String marca) {
         this.marca = marca;
     }
@@ -127,7 +144,8 @@ public abstract class Barco implements ControleBarco {
         this.numeroPassageiros = numeroPassageiros;
     }
 
-    public Barco(String marca, String modelo, String cor, String identificacao, int numeroPassageiros, int velocidadeMaxima) {
+    public Barco(String marca, String modelo, String cor, String identificacao, 
+            int numeroPassageiros, int velocidadeMaxima) {
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
@@ -136,7 +154,8 @@ public abstract class Barco implements ControleBarco {
         this.velocidadeMaxima = velocidadeMaxima;
     }
 
-    public Barco(String marca, String modelo, String cor, String identificacao, int numeroPassageiros, int velocidadeMaxima, double alturaCalado) {
+    public Barco(String marca, String modelo, String cor, String identificacao, 
+            int numeroPassageiros, int velocidadeMaxima, double alturaCalado) {
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
@@ -146,6 +165,4 @@ public abstract class Barco implements ControleBarco {
         this.alturaCalado = alturaCalado;
     }
 
-    
-    
 }

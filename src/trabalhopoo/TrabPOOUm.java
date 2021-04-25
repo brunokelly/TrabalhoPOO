@@ -5,15 +5,10 @@
  */
 package trabalhopoo;
 
-public class TrabalhoPOO1 {
+public class TrabPOOUm {
 
     public static void main(String[] args) {
-        Iate iateUm = new Iate(1500);
-
-        
-        iateUm.toString();
-        iateUm.Imprimir();
-        
-        System.out.println(iateUm.ValorDesconto());
+    
+    
     }
 }

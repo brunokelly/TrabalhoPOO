@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/*
 package trabalhopoo;
 
-public abstract class BarcoPequeno implements ControleBarco {
+public abstract class BarcoPequeno {
     
     private String marca;
     private String modelo;
@@ -124,7 +125,9 @@ public abstract class BarcoPequeno implements ControleBarco {
         this.tipoCasco = tipoCasco;
     }
 
-    public BarcoPequeno(String modelo, String identificacao, int velocidadeMaxima, String tipoCasco, int potenciaMotor) {
+    public BarcoPequeno(String modelo, String identificacao, int velocidadeMaxima, 
+            String tipoCasco, int potenciaMotor) 
+    {
         this.modelo = modelo;
         this.identificacao = identificacao;
         this.velocidadeMaxima = velocidadeMaxima;
@@ -148,7 +151,10 @@ public abstract class BarcoPequeno implements ControleBarco {
         this.potenciaMotor = potenciaMotor;
     }
 
-    public BarcoPequeno(String marca, String modelo, String cor, String identificacao, int numeroPassageiros, int velocidadeMaxima, double alturaCalado, double preco, String tipoCasco, int potenciaMotor) {
+    public BarcoPequeno(String marca, String modelo, String cor, String identificacao, 
+            int numeroPassageiros, int velocidadeMaxima, double alturaCalado, double preco, 
+            String tipoCasco, int potenciaMotor) 
+    {
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
@@ -160,26 +166,16 @@ public abstract class BarcoPequeno implements ControleBarco {
         this.tipoCasco = tipoCasco;
         this.potenciaMotor = potenciaMotor;
     }
-    
-    
-    
-    
 
-    @Override
-    public void Cadastrar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
-    @Override
-    public String Imprimir() {
-        return "marca = " + marca + ", modelo = " + modelo + ", cor = " + cor + ", identificacao = " + identificacao + ", numeroPassageiros = " + numeroPassageiros + ", velocidadeMaxima = " + velocidadeMaxima + ", alturaCalado = " + alturaCalado + ", preco = " + preco + ", tipoCasco = " + tipoCasco + ", potenciaMotor = " + potenciaMotor + '\n';
+    public String Imprimir() 
+    {
+        return "marca = " + marca + ", modelo = " + modelo + ", cor = " + cor + 
+                ", identificacao = " + identificacao + ", numeroPassageiros = " 
+                + numeroPassageiros + ", velocidadeMaxima = " + velocidadeMaxima + 
+                ", alturaCalado = " + alturaCalado + ", preco = " + preco + ", tipoCasco = "
+                + tipoCasco + ", potenciaMotor = " + potenciaMotor + '\n';
     }
     
-    @Override
-    public abstract double ValorDesconto();
-
-    @Override
-    public Barco Entrada() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }
+*/
