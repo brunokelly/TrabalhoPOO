@@ -12,9 +12,9 @@ public class TrabalhoPOO1 {
         
         int numCabine;
         numCabine = teste.PessoasPorCabine(); 
+        teste.toString();
+        teste.Imprimir();
         
-        System.out.println(numCabine);
-        
+        System.out.println();
     }
-    
 }

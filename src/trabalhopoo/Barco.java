@@ -16,6 +16,11 @@ public abstract class Barco implements ControleBarco {
     private double alturaCalado;
     private double preco;
 
+    @Override
+    public String Imprimir() {
+        return "Barco{" + "marca=" + marca + ", modelo=" + modelo + ", cor=" + cor + ", identificacao=" + identificacao + ", numeroPassageiros=" + numeroPassageiros + ", velocidadeMaxima=" + velocidadeMaxima + ", alturaCalado=" + alturaCalado + ", preco=" + preco + '}';
+    }
+    
     
     public String getMarca() {
         return marca;
@@ -78,9 +83,9 @@ public abstract class Barco implements ControleBarco {
 
     @Override
     public abstract double ValorDesconto();
-
-    @Override
-    public abstract String Imprimir();
+    
+    //@Override
+    //public abstract String Imprimir();
 
     @Override
     public abstract void Cadastrar();
@@ -151,7 +156,5 @@ public abstract class Barco implements ControleBarco {
     public Barco(int numeroPassageiros) {
         this.numeroPassageiros = numeroPassageiros;
     }
-    
-    
     
 }

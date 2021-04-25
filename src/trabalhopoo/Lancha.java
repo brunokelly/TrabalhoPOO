@@ -9,8 +9,6 @@ public class Lancha extends BarcoPequeno {
 
     private boolean banheiro;
     
-    private String Dono;
-    
     public boolean isBanheiro() {
         return banheiro;
     }
@@ -21,10 +19,8 @@ public class Lancha extends BarcoPequeno {
     
     public Lancha(String marca){
         this.setMarca(marca);
-        this.setModelo("Oi");
    }
 
-    
     /* MEOTODS */
     @Override
     public Barco Entrada() {
@@ -43,7 +39,7 @@ public class Lancha extends BarcoPequeno {
 
     @Override
     public String Imprimir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Barco{"+ "banheiro=" + isBanheiro() + "marca=" + getMarca() + ", modelo=" + getModelo() + ", cor=" + getCor() + ", identificacao=" + getIdentificacao() + ", numeroPassageiros=" + getNumeroPassageiros() + ", velocidadeMaxima=" + getVelocidadeMaxima() + ", alturaCalado=" + getAlturaCalado() + ", preco=" + getPreco() + '}';
     }
 
     @Override
